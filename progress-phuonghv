@@ -1,0 +1,141 @@
+
+
+Tháng 1: 25/03/2025 - 25/04/2025
+Tuần 1 (25/03 - 31/03): AD Cơ bản
+Mục tiêu: Hiểu AD, dump hash.
+
+Nguồn: 
+TryHackMe: “Active Directory Basics” (miễn phí).
+--> Đã học
+
+INE Premium: Xem PTPv3 module “Active Directory Enumeration”.
+
+Thực hành: 
+Làm HTB Forest trong 24 giờ (AD easy).
+
+Commands: net user /domain, mimikatz "sekurlsa::logonpasswords".
+
+Kết quả: Biết cách liệt kê user, dump NTLM hash.
+
+Tuần 2 (01/04 - 07/04): AD Khai thác
+Mục tiêu: Kerberoasting, Pass-the-Hash.
+
+Nguồn: 
+TryHackMe: “Attacking AD” ($10/tháng nếu chưa sub).
+
+HTB Academy: “Active Directory Attacks” (miễn phí tier cơ bản).
+
+Thực hành: 
+Kerberoasting trên Forest: GetUserSPNs.py, crack hash bằng hashcat.
+
+Pass-the-Hash: psexec.py với hash từ Mimikatz.
+
+Kết quả: Lên domain admin trên lab đơn giản.
+
+Tuần 3 (08/04 - 14/04): Web + Privesc
+Mục tiêu: Ôn initial access, tăng tốc privesc.
+
+Nguồn: 
+PortSwigger: Lab Practitioner (SQLi, XSS).
+
+HTB: Jerry, Bashed trong 12-18 giờ mỗi box.
+
+Thực hành: 
+SQLi → shell (Netcat reverse shell).
+
+Privesc: Sudo abuse (Linux), service misconfig (Windows).
+
+Kết quả: Vào máy Linux + privesc nhanh.
+
+Tuần 4 (15/04 - 21/04): Pivot + Tool Setup
+Mục tiêu: Kết hợp pivot với AD.
+
+Nguồn: 
+TryHackMe: “Wreath” (3 máy, pivot).
+
+INE PTPv3: Module “Network Pivoting”.
+
+Thực hành: 
+SSH tunnel: ssh -L 4450:192.168.1.20:445.
+
+Proxychains: Scan internal từ máy 1.
+
+Chuẩn bị Kali: Tải Mimikatz, BloodHound, hashcat.
+
+Kết quả: Pivot từ Linux sang Windows AD.
+
+Tháng 2: 26/04/2025 - 25/05/2025
+Tuần 5 (26/04 - 02/05): AD Nâng cao
+Mục tiêu: BloodHound, lateral movement.
+
+Nguồn: 
+HTB: Active (AD medium) trong 18-24 giờ.
+
+TryHackMe: “AD Exploitation” (nếu còn sub).
+
+Thực hành: 
+BloodHound: Upload SharpHound data, tìm DA path.
+
+RDP/SMB pivot với creds từ hash.
+
+Kết quả: Điều khiển 2-3 máy trong AD.
+
+Tuần 6 (03/05 - 09/05): Full Flow
+Mục tiêu: Làm 3 máy trong 24 giờ.
+
+Nguồn: 
+GOAD Lab (github.com/Orange-Cyberdefense/GOAD) – dựng 3 máy AD.
+
+Thực hành: 
+Web → Linux shell → AD hash → DA.
+
+Ghi chú: Commands, hash, bước làm.
+
+Kết quả: Full pentest trong 24 giờ.
+
+Tuần 7 (10/05 - 16/05): Lab Questions
+Mục tiêu: Luyện trả lời câu hỏi mở.
+
+Nguồn: 
+Tự làm HTB Forest, Active, đặt câu hỏi: “Cách mày dump hash?”, “Mày lên DA thế nào?”.
+
+Thực hành: 
+Viết câu trả lời ngắn (2-3 câu) cho 5-10 câu hỏi mẫu.
+
+Kết quả: Trả lời nhanh, chính xác.
+
+Tuần 8 (17/05 - 23/05): Thi Thử
+Mục tiêu: Test full 24 giờ.
+
+Nguồn: 
+GOAD hoặc HTB Forest + Active combo.
+
+Thực hành: 
+Làm từ 8h sáng đến 8h sáng hôm sau, nộp câu hỏi.
+
+Nghỉ 1 ngày, đánh giá sai sót.
+
+Kết quả: Sẵn sàng thi thật.
+
+Thi thật: Đầu tháng 6/2025
+Đặt lịch: 01-05/06/2025 (liên hệ INE qua email sau khi mua).
+
+Thi lần 1: 24 giờ, nghỉ 1-2 ngày nếu fail, phân tích lại với tao để thi lần 2.
+
+Công cụ cần sẵn sàng
+Kali VM: Cài sẵn:
+Web: Burp Suite, sqlmap.
+
+AD: Mimikatz, BloodHound, PowerView, hashcat.
+
+Pivot: Proxychains, Chisel.
+
+Privesc: LinPEAS, WinPEAS.
+
+Wordlist: Rockyou.txt, seclists (cho brute force).
+
+
+
+
+
+
