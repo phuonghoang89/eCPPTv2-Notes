@@ -1,17 +1,19 @@
+Tiến trình luyện eCPPT verion 3 (bắt đầu từ ngày 25/3/2025)
 
-
-Tháng 1: 25/03/2025 - 25/04/2025
-Tuần 1 (25/03 - 31/03): AD Cơ bản
+I. Tháng 1: 25/03/2025 - 25/04/2025
+1. Tuần 1 (25/03 - 31/03): AD Cơ bản
 Mục tiêu: Hiểu AD, dump hash.
 
 Nguồn: 
-TryHackMe: “Active Directory Basics” (miễn phí).
---> Đã học
-
-INE Premium: Xem PTPv3 module “Active Directory Enumeration”.
+- TryHackMe: “Active Directory Basics” (miễn phí).
+- HackTheBox " Introduction to Active Directory" 
+Link: https://academy.hackthebox.com/module/details/74
+--> Đã học xong ngày 25/3/2025 (Kiến thức cơ bản về Active Directory)
+- INE Premium: Xem PTPv3 module “Active Directory Enumeration”.
 
 Thực hành: 
 Làm HTB Forest trong 24 giờ (AD easy).
+Đã root box Active
 
 Commands: net user /domain, mimikatz "sekurlsa::logonpasswords".
 
